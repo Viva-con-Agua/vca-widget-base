@@ -1,6 +1,6 @@
 # vca-widget-base
 
-[![npm](https://img.shields.io/npm/v/vca-widget-user.svg)](https://www.npmjs.com/package/vca-widget-base) [![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
+[![npm](https://img.shields.io/npm/v/vca-widget-base.svg)](https://www.npmjs.com/package/vca-widget-base) [![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
 
 > Implements different visualizations for a user.
 
