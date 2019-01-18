@@ -1,11 +1,14 @@
 {
   "name": "vca-widget-base",
   "version": "0.1.1",
+  "description": "Implements different base elements for Viva con Aguas Pool².",
+  "author": "Johann Sell",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lib": "vue-cli-service build --target lib --name vca-widget-base src/lib.js",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "prepublish": "npm run lib"
   },
   "main": "./dist/vca-widget-base.common.js",
   "files": [
@@ -34,5 +37,17 @@
   "dependencies": {
     "ajv": "^6.7.0",
     "element-ui": "^2.4.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Viva-con-Agua/vca-widget-base"
+  },
+  "bugs": {
+    "url": "https://github.com/Viva-con-Agua/vca-widget-base/issues"
+  },
+  "homepage": "https://github.com/Viva-con-Agua/vca-widget-base#readme",
+  "license": {
+    "type": "AGPL-3.0-or-later",
+    "url": "https://www.gnu.org/licenses/agpl.txt"
   }
 }
