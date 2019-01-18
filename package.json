@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lib":   "vue-cli-service build --target lib --name vca-widget-base src/index.js",
+    "lib":   "vue-cli-service build --target lib --name vca-widget-base src/lib.js",
     "lint": "vue-cli-service lint"
   },
   "main": "./dist/vca-widget-base.common.js",
