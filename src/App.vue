@@ -1,17 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <VcAFrame title="Test Frame">
+      <VcAColumn size="90%">
+        <VcABox :first="true" title="Test Box 1">
+          <img alt="Vue logo" src="./assets/logo.png">
+        </VcABox>
+        <VcABox title="Test Box 2">
+          Abstand
+        </VcABox>
+      </VcAColumn>
+      <VcAColumn>
+        <VcABox :first="true" title="Test Box 3">
+          <VcAInfoBox>test information</VcAInfoBox>
+        </VcABox>
+      </VcAColumn>
+    </VcAFrame>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import VcABox from './components/VcABox.vue'
+import VcAColumn from './components/VcAColumn.vue'
+import VcAFrame from './components/VcAFrame.vue'
+import VcAInfoBox from './components/VcAInfoBox.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    VcABox, VcAColumn, VcAFrame, VcAInfoBox
   }
 }
 </script>
