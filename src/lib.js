@@ -2,6 +2,7 @@ import VcABox from './components/VcABox.vue'
 import VcAColumn from './components/VcAColumn.vue'
 import VcAFrame from './components/VcAFrame.vue'
 import VcAInfoBox from './components/VcAInfoBox.vue'
+import VcAFilterTag from './components/VcAFilterTag.vue'
 import VueI18n from 'vue-i18n'
 import en from './lang/en.json'
 import de from './lang/de.json'
@@ -49,12 +50,18 @@ VcAInfoBox.install = function (Vue, options) {
   Vue.component('vca-info-box', VcAInfoBox)
 }
 
+VcAFilterTag.install = function (Vue, options) {
+  Vue = getLang(Vue, options)
+  Vue.component('vca-filter-tag', VcAFilterTag)
+}
+
 // Install by default if using the script tag
 if (typeof window !== 'undefined' && window.Vue) {
   window.Vue.use(VcABox)
   window.Vue.use(VcAColumn)
   window.Vue.use(VcAFrame)
   window.Vue.use(VcAInfoBox)
+  window.Vue.use(VcAFilterTag)
 }
 
 export default VcAFrame
@@ -65,5 +72,6 @@ export {
   VcAColumn,
   VcAFrame,
   VcAInfoBox,
+  VcAFilterTag,
   version
 }
