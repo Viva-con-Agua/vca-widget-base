@@ -1,6 +1,6 @@
 {
   "name": "vca-widget-base",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Implements different base elements for Viva con Aguas Pool².",
   "author": "Johann Sell",
   "scripts": {
