@@ -3,6 +3,9 @@
     <VcAFrame title="Page Frame">
       <VcAColumn size="90%">
         <VcABox :first="true" title="First Box">
+          <template slot="header">
+            Additional Information
+          </template>
           <img alt="Vue logo" src="./assets/logo.png">
         </VcABox>
         <VcABox title="Second Box">
